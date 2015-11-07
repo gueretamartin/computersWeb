@@ -4,12 +4,17 @@ body {
   background-color: #eee;
 }
 
+a{
+  margin: 20px 0px;
+  font-size: 15px;
+}
 /*.container {
 border: 1px solid #B22222;
 border-radius: 10px;
 margin-top: 15px;
 margin-bottom: 15px;
 }*/
+
 
 h2 {
   font-family: "Verdana";
