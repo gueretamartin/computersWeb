@@ -4,66 +4,49 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="favicon.ico">
 
     <title>Registrarse al Sitio</title>
-
-    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
-<!-- Custom styles for this template -->
     <link href="css/signup.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="assets/js/ie-emulation-modes-warning.js"></script>
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
 
   <body>
 
-<!-- Define container -->
-
     <div class="container">
 
-<!-- Define form -->
     <div class="row">
 
        <div class="col-lg-3"></div>
        <div class="col-lg-6">
         
-          <form action="registred.html" class="form-signup" method="POST">
+          <form action="signUp.php" class="form-signup" method="POST">
             <h2><strong>Complete con sus datos:</strong></h2>
-       
-        <!-- Deffine parts of form --> 
 
              <label for="inputUser" class="sr-only">Usuario</label>
-             <input type="text" id="inputUser" class="form-control" placeholder="Usuario" required autofocus>
+             <input type="text" id="inputUser" name="user" class="form-control" placeholder="Usuario" required autofocus>
 
              <label for="inputName" class="sr-only">Nombre</label>
-             <input type="text" id="inputName" class="form-control" placeholder="Nombre" required autofocus>
+             <input type="text" id="inputName" name="name" class="form-control" placeholder="Nombre" required autofocus>
 
              <label for="inputApellido" class="sr-only">Apellido</label>
-             <input type="text" id="inputSurname" class="form-control" placeholder="Apellido" required autofocus>
-
-             <label for="inputFecha">Fecha de Nacimiento</label>
-             <input type="date" id="inputDate" class="form-control" placeholder="Fecha de Nacimiento" required autofocus>
+             <input type="text" id="inputSurname" name="surname" class="form-control" placeholder="Apellido" required autofocus>
+             
+             <input type="date" id="inputDate" name="birth" class="form-control" placeholder="Fecha de Nacimiento dd/MM/AAAA" required autofocus>
         
              <label for="inputEmail" class="sr-only">E-mail</label>
-             <input type="text" id="inputEmail" class="form-control" placeholder="E-mail" required autofocus>
+             <input type="email" id="inputEmail" name="email" class="form-control" placeholder="E-mail" autofocus pattern="^[a-zA-Z0-9.!#$%'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" required/>
 
              <label for="inputPassword" class="sr-only">Contraseña</label>
-             <input type="password" id="inputPassword" class="form-control" placeholder="Contraseña" required autofocus >
+             <input type="password" id="inputPassword" name="pass" class="form-control" placeholder="Contraseña" required autofocus >
        
               <a href="termsandconditions.html"><br/>Leer los términos y condiciones</a>
-      <!-- Add checkbox-->
+
              <div class="checkbox">
                 <label>
                 <input  type="checkbox" value="agree" required> Estoy de acuerdo con los términos y condiciones
@@ -72,15 +55,14 @@
 
              <button class="btn btn-lg btn-primary btn-block" type="submit">Enviar</button>
              <br>
-             <u><a href="index.html">No, Ya estoy registrado.</a></u>
+             <a href="index.php">No, Ya estoy registrado.</a>
         
           </form>
-     </div><!--Close div of column-->
+     </div>
      <div class="col-lg-3"></div>
     </div> 
-    </div> <!-- /container -->
+    </div>
 
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>
