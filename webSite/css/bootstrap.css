@@ -6740,6 +6740,7 @@ button.close {
   .hidden-sm {
     display: none !important;
   }
+
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .hidden-md {
@@ -6798,4 +6799,10 @@ button.close {
     display: none !important;
   }
 }
+.tagline {
+    font-size: 40px;
+    text-shadow: 0 0 10px #000;
+    color: #fff;
+}
+
 /*# sourceMappingURL=bootstrap.css.map */

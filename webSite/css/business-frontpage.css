@@ -3,7 +3,7 @@
  * Code licensed under the Apache License v2.0.
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
-address { 
+address {
 text-align: center;
 
 }
@@ -22,7 +22,7 @@ hr {
 }
 
 .business-header {
-    height: 120px;
+    height: 130px;
     background: url("../img/sint3.png") center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -33,11 +33,11 @@ hr {
 
 /* Customize the text color and shadow color and to optimize text legibility. */
 
-.tagline {
+/*.tagline {
     font-size: 45px;
     text-shadow: 0 0 10px #000;
     color: #fff;
-}
+}*/
 
 /*.tagline2 {
     font-size: 15px;

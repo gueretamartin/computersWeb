@@ -3,7 +3,7 @@ require('connection.php');
 session_start();
 
 if(isset($_SESSION["id"])){
-  header("Location: exito-log.php");
+  header("Location: paginaPrincipal.php");
 }
 
 
@@ -23,7 +23,7 @@ if(!empty($_POST))
     $row = $result->fetch_assoc();
     $_SESSION['id'] = $row['id'];
     $_SESSION['idTipoUsuario'] = $row['idTipoUsuario'];
-    header("location: exito-log.php");
+    header("location: paginaPrincipal.php");
   } else {$error = "El nombre de usuario y/o contraseña son incorrectos";}
 }
 
@@ -53,9 +53,9 @@ if(!empty($_POST))
      <script type="text/javascript" src="validacionNombreUsuario.js">
 
     </script>
-
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
+
 </head>
 
 <body>
